@@ -1,0 +1,205 @@
+/* CSS Document */
+input,textarea,radio,button{outline:none}
+
+textarea{resize:none}
+
+body{background-color:#fbfbfb}
+
+textarea::-webkit-input-placeholder:after{
+  display:block;
+  content:"\A     例如 :1 是否有运营经验\A              2 常用的App和网页有哪些，有没有自己想改进的地方\A              3 以后想从事的事业";
+  color:#bdbcbc;
+};
+
+#input_3:-webkit-input-placeholder {
+  color: #bdbcbc;
+}
+#input_3:-moz-placeholder {
+  color: #bdbcbc;
+}
+#input_3:-ms-input-placeholder {
+  color: #bdbcbc;
+}
+
+.main{
+	width:960px;
+	position:relative;
+	margin:0px auto;
+}
+.content{
+	position:relative;
+	margin-left:80px;
+}
+
+.upload{
+	position:relative;
+	border-radius: 5px;
+}
+
+.upload_1{
+	width:153px;
+	height:216px;
+	font-family:microsoft YaHei;
+	font-size:28px;
+	color:#bdbcbc;
+	border-radius: 5px;
+	border:1px solid #bdbcbc;
+	
+	text-align:center;
+	-moz-box-shadow: inset 0 0 4px #bdbcbc;
+	-webkit-box-shadow: inset 0 0 4px #bdbcbc;
+	-ms-box-shadow: inset 0 0 4px #bdbcbc;
+	box-shadow: inset 0 0 4px #bdbcbc;
+	
+}
+
+#img_upload{
+    position: absolute;
+    opacity: 0;
+	top:0;
+	left:0;
+	width:153px;
+	height:216px;
+	font-family:microsoft YaHei;
+	font-size:28px;
+	color:#bdbcbc;
+	border-radius: 5px;
+	border:1px solid #bdbcbc;
+	
+	text-align:center;
+	-moz-box-shadow: inset 0 0 4px #bdbcbc;
+	-webkit-box-shadow: inset 0 0 4px #bdbcbc;
+	-ms-box-shadow: inset 0 0 4px #bdbcbc;
+	box-shadow: inset 0 0 4px #bdbcbc;
+}
+
+.table{
+	width:800px;
+	height:224px;
+	position:relative;
+	margin-top:60px;   
+		
+}
+
+.rege1,.rege2,.rege3{
+	font:12px 'Microsoft YaHei';
+	color: red;
+	height:12px;
+	padding:0 0 0 10px;
+	display: none;
+	position: absolute;
+}
+ 
+.rege2{
+	top: 140px;
+}
+
+.rege3{
+	top: 220px;
+}
+
+.submit_1,.input_3,.range3{
+position:relative;
+top:-78px;
+}
+
+
+
+.input_1{
+	width:298px;
+	height:46px;
+	line-height:46px;
+	border-radius: 5px;
+	font-family:Microsoft YaHei;
+	font-size:24px;
+	color:#747474;
+	border:1px solid #bdbcbc;
+	text-indent:20px;
+	-moz-box-shadow: inset 0 0 4px #bdbcbc;
+	-webkit-box-shadow: inset 0 0 4px #bdbcbc;
+	-ms-box-shadow: inset 0 0 4px #bdbcbc;
+	box-shadow: inset 0 0 4px #bdbcbc;
+}
+
+.input_1:hover,.input_3:hover,.upload:hover
+{
+	-webkit-box-shadow:  0 0 5px #5dc3e2;
+	-moz-box-shadow:  0 0 5px #5dc3e2;
+	-ms-box-shadow:  0 0 5px #5dc3e2;
+	box-shadow:  0 0 5px #5dc3e2;
+}
+
+.input_2{
+	width:300px;
+	height:50px;
+	line-height:50px;
+	font:24px 'Microsoft YaHei';
+	text-indent:20px;
+	color:#747474;
+	}
+
+.radio_1{
+	width:18px;
+	height:18px;
+}
+
+.range1,.range2{
+	position:relative;
+	top:-30px;
+	}
+	
+	
+.range2{
+	padding:0 18px;
+	}
+	
+.range3{
+	padding:15px 0 0 0;
+
+	}
+	
+.range4{
+	padding:15px 18px 0 18px;
+	position:relative;
+	top:-80px;
+	}
+	
+.input_3{
+	width:794px;
+	min-height:394px;
+	border-radius: 5px;
+	font-family:Microsoft YaHei;
+	font-size:18px;
+	color:#747474;
+	border:1px solid #bdbcbc;
+	position:relative;
+	text-indent:20px;
+	margin-top:30px;
+	margin-left:2px;
+	-moz-box-shadow: inset 0 0 4px #bdbcbc;
+	-webkit-box-shadow: inset 0 0 4px #bdbcbc;
+	-ms-box-shadow: inset 0 0 4px #bdbcbc;
+	box-shadow: inset 0 0 4px #bdbcbc;
+}
+
+.submit_1{
+	width:200px;
+	height:80px;
+	font-family:Microsoft YaHei;
+	font-size:32px;
+	color:#747474;
+	background-color:#fbfbfb;
+	border:1px solid #bdbcbc;
+	border-radius: 5px;
+	margin-top:20px;
+	margin-left:300px;
+	-moz-box-shadow: inset 0 0 5px #e0dddd;
+	-webkit-box-shadow: inset 0 0 5px #e0dddd;
+	-ms-box-shadow: inset 0 0 5px #e0dddd;
+	box-shadow: inset 0 0 5px #e0dddd;
+	}
+	
+.submit_1:hover{
+	background-color:#eeeded;
+	
+	}

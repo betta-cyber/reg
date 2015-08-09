@@ -1,0 +1,108 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-family:Microsoft YaHei;
+}
+
+.container{
+	width:860px;
+	margin:60px auto 0;
+	padding:0px;
+}
+
+.nav1{
+	float:left;
+
+}
+
+.nav{
+	width:150px;
+	text-align:center;
+	height:200px;
+	border:1px solid #bdbcbc;
+	border-radius:5px 0 0 5px;
+	border-right:none;
+}
+
+.nav1 > ul > li > a {
+	margin:0px;
+	border:none;
+	padding:0;
+	height:50px;
+	letter-spacing:3px;
+	font-size:1em;
+	color:#747474;
+	font-family:Microsoft YaHei;
+	line-height:50px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus,.nav-tabs > li.active > a:hover{
+	border:none;
+	border-bottom:1px solid #bdbcbc;
+}
+
+.tab-content{
+	width:100%;
+}
+
+ul{
+	margin-top:50px;
+	margin-left:0;
+}
+
+ul li {
+	height:49px;
+	border-bottom:1px solid #bdbcbc;
+	font-size:1.5em;
+	vertical-align:middle;
+	background-color:#f5f5f5;
+}
+
+.right{
+	float:right;
+}
+
+.table1{
+	float:right;
+	width:710px;
+	height:550px;
+	border-radius:5px;
+	border:1px solid #bdbcbc;
+}
+
+.table > thead > tr > th,.table > tbody > tr > td{
+	text-align:center;
+	letter-spacing:3px;
+	height:50px;
+	vertical-align:middle;
+	font-size:1.5em;
+	color:#747474;
+}
+
+.table > thead > tr > th{
+	background-color:#eeeded;
+}
+
+.turn{
+	text-align:center;
+}
+
+.pagination{
+	border:none;
+}
+
+.turn > ul > li{
+	border:none;
+
+}
+
+.turn > ul > li > a{
+	padding:0px;
+	width:50px;
+	height:50px;
+	color:#747474;
+	border:1px solid #bdbcbc;
+	margin-right:10px;
+	text-align:center;
+	line-height:50px;
+}
