@@ -42,8 +42,11 @@ class Reg extends CI_Controller {
 		header('Location: /reg');
 	}
 
-	protected function img_upload()
+	public function info()
 	{
+		$id = $this->uri->segment(3);
+		$data['post_info'] = $this->reg_m->get_id_article($id);
 
+		$this->load->view('info', $data);
 	}
 }

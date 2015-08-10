@@ -19,21 +19,6 @@
 	<link href="static/css/css1.css" rel="stylesheet">
 	<script src="static/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="static/js/jquery-1.4.2.min.js"></script>
-	<script type="text/javascript" src="static/js/popup_layer.js"></script>
-	<script type="text/javascript">
-	$(document).ready(function(){
-		new PopupLayer({
-			trigger:".table tbody td a",
-			popupBlk:"#blk1",
-			closeBtn:"#close1",
-			useOverlay:true,
-			offsets:{
-				x:500,
-				y:71
-			}
-		});	
-	});
-	</script>
   </head>
   <body>
 	<div class="container">
@@ -61,7 +46,7 @@
 				<tbody>
                 	<?php foreach ($list as $row):?>
 						<tr>
-						<td ><a><?php echo $row['name'];?><a/></td>
+						<td ><a href="<?php echo base_url();?>post/info/<?php echo $row['Id'];?>"><?php echo $row['name'];?><a/></td>
 						<td><?php echo $row['department'];?></td>
 						<td><?php echo $row['grade'];?></td>
 						<td><?php echo $row['intention'];?></td>
@@ -72,43 +57,17 @@
 		</div>
 		
 		</div>
-		<div class="turn">
-			<ul class="pagination">
-				<li><a href="post/page/<?php echo $sub;?>/<?php echo $Thisid-1;?>">&laquo;</a></li>
-				<li><a href="post/page/<?php echo $sub;?>/<?php echo $Thisid-1;?>"><?php echo $Thisid-1;?></a></li>
-				<li><a href="post/page/<?php echo $sub;?>/<?php echo $Thisid;?>"><?php echo $Thisid;?></a></li>
-				<li><a href="post/page/<?php echo $sub;?>/<?php echo $Thisid+1;?>"><?php echo $Thisid+1;?></a></li>
-				<li><a href="post/page/<?php echo $sub;?>/<?php echo $Thisid+1;?>">&raquo;</a></li>
-			</ul>
+			<div class="turn">
+				<ul class="pagination">
+					<li><a href="post/page/<?php echo $sub;?>/<?php echo $Thisid-1;?>">&laquo;</a></li>
+					<li><a href="post/page/<?php echo $sub;?>/<?php echo $Thisid-1;?>"><?php echo $Thisid-1;?></a></li>
+					<li><a href="post/page/<?php echo $sub;?>/<?php echo $Thisid;?>"><?php echo $Thisid;?></a></li>
+					<li><a href="post/page/<?php echo $sub;?>/<?php echo $Thisid+1;?>"><?php echo $Thisid+1;?></a></li>
+					<li><a href="post/page/<?php echo $sub;?>/<?php echo $Thisid+1;?>">&raquo;</a></li>
+				</ul>
+			</div>
 		</div>
-
-		</div>
-		<!--table over-->
-		<div id="blk1" class="blk" style="display:none;">
-            <div class="main">
-                <h2>追风少年马建国</h2>
-				<table  class="table2">
-				<tr>
-				<td>姓名</td>
-				<td>性别</td>
-				</tr>
-				<tr>
-				<td>学院</td>
-				<td>年级专业</td>
-				</tr>
-				<tr>
-				<td>部门意向</td>
-				<td>手机号</td>
-				</tr>
-				<img src="psb.jpg"></img>
-				</table>
-				<p>自我介绍</p>
-                <a href="javascript:void(0)" id="close1" class="closeBtn">关闭</a>
-            </div>
-        </div>
     </div>
-		
-
 	</div>
   </body>
 </html>

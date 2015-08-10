@@ -13,8 +13,8 @@ class Reg_m extends CI_Model{
 	}
 
 	public function get_id_article($id){
-		$query = $this->db->get_where('posts',array('id' => $id));
-		return $query->row_array();
+		$query = $this->db->get_where('reg',array('id' => $id));
+		return $query->result_array();
 	}
 
 	public function get_all_list(){

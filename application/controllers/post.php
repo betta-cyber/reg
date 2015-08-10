@@ -51,4 +51,12 @@ class Post extends CI_Controller {
 		$data['Thisid'] = $id;
 		$this->load->view('post',$data);
 	}
+
+	public function info()
+	{
+		$id = $this->uri->segment(3);
+		$data['post_info'] = $this->reg_m->get_id_article($id);
+
+		$this->load->view('info', $data);
+	}
 }
