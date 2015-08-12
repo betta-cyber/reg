@@ -55,8 +55,19 @@ class Post extends CI_Controller {
 	public function info()
 	{
 		$id = $this->uri->segment(3);
-		$data['post_info'] = $this->reg_m->get_id_article($id);
-
+		$data['post_info'] = $this->reg_m->get_info($id);
+		$data['current_page'] = $this->reg_m->get_current_page($id);
+		echo $data['current_page'];
 		$this->load->view('info', $data);
+	}
+
+	public function delete_info()
+	{
+		$id = $this->uri->segment(3);
+
+		$this->reg_m->del_info($id);
+		$a = base_url();
+		$url = $a.'post/index';
+		header('Location: '.$url);
 	}
 }

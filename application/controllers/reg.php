@@ -41,12 +41,4 @@ class Reg extends CI_Controller {
 		$query = $this->reg_m->insert($regArr);
 		header('Location: /reg');
 	}
-
-	public function info()
-	{
-		$id = $this->uri->segment(3);
-		$data['post_info'] = $this->reg_m->get_id_article($id);
-
-		$this->load->view('info', $data);
-	}
 }
