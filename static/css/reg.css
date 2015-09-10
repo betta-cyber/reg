@@ -1,13 +1,29 @@
 /* CSS Document */
-input,textarea,radio,button{outline:none}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: microsoft YaHei;
+}
+html {
+	font-size: 16px;
+	font-family:  '雅黑';
+}
 
-textarea{resize:none}
-
-body{background-color:#fbfbfb}
+body {
+	width: 100%;
+	font-size: 1em;
+	background-color:#fbfbfb
+}
+input,textarea,radio,button{
+	outline:none
+}
+textarea{
+	resize:none
+}
 
 textarea::-webkit-input-placeholder:after{
   display:block;
-  content:"\A     例如 :1 是否有运营经验\A              2 常用的App和网页有哪些，有没有自己想改进的地方\A              3 以后想从事的事业";
+  content:"\A     例如 :1 是否有运营经验\A           2 常用的App和网页有哪些，有没有自己想改进的地方\A           3 以后想从事的事业";
   color:#bdbcbc;
 };
 
@@ -21,185 +37,215 @@ textarea::-webkit-input-placeholder:after{
   color: #bdbcbc;
 }
 
-.main{
-	width:960px;
+.main{	
+	width:60em;
 	position:relative;
-	margin:0px auto;
+	margin:0 auto;
 }
 .content{
 	position:relative;
-	margin-left:80px;
 }
 
 .upload{
 	position:relative;
-	border-radius: 5px;
+	border-radius: 0.3em;
 }
 
 .upload_1{
-	width:153px;
-	height:216px;
+	width: 6em;
+	height: 8em;
 	font-family:microsoft YaHei;
-	font-size:28px;
+	font-size:1.75em;
 	color:#bdbcbc;
-	border-radius: 5px;
-	border:1px solid #bdbcbc;
-	
+	border-radius: 0.3em;
+	border:0.1em solid #bdbcbc;	
 	text-align:center;
-	-moz-box-shadow: inset 0 0 4px #bdbcbc;
-	-webkit-box-shadow: inset 0 0 4px #bdbcbc;
-	-ms-box-shadow: inset 0 0 4px #bdbcbc;
-	box-shadow: inset 0 0 4px #bdbcbc;
+	-moz-box-shadow: inset 0 0 0.25em #bdbcbc;
+	-webkit-box-shadow: inset 0 0 0.25em #bdbcbc;
+	-ms-box-shadow: inset 0 0 0.25em #bdbcbc;
+	box-shadow: inset 0 0 0.25em #bdbcbc;
 	
 }
 
 #img_upload{
-    position: absolute;
-    opacity: 0;
+   	position: absolute;
+   	opacity: 0;
 	top:0;
 	left:0;
-	width:153px;
-	height:216px;
+	width: 6em;
+	height: 8em;
 	font-family:microsoft YaHei;
-	font-size:28px;
+	font-size:1.75em;
 	color:#bdbcbc;
-	border-radius: 5px;
-	border:1px solid #bdbcbc;
+	border-radius: 0.312em;
+	border:0.0625em solid #bdbcbc;
 	
 	text-align:center;
-	-moz-box-shadow: inset 0 0 4px #bdbcbc;
-	-webkit-box-shadow: inset 0 0 4px #bdbcbc;
-	-ms-box-shadow: inset 0 0 4px #bdbcbc;
-	box-shadow: inset 0 0 4px #bdbcbc;
+	-moz-box-shadow: inset 0 0 0.25em #bdbcbc;
+	-webkit-box-shadow: inset 0 0 0.25em #bdbcbc;
+	-ms-box-shadow: inset 0 0 0.25em #bdbcbc;
+	box-shadow: inset 0 0 0.25em #bdbcbc;
 }
 
 .table{
-	width:800px;
-	height:224px;
+	width:50em;
+	height:14em;
 	position:relative;
-	margin-top:60px;   
+	margin: 1.5em auto;
 		
 }
 
 .rege1,.rege2,.rege3{
-	font:12px 'Microsoft YaHei';
+	font: 0.75em;
 	color: red;
-	height:12px;
-	padding:0 0 0 10px;
+	height:0.75em;
+	padding:0 0 0 0.625em;
 	display: none;
 	position: absolute;
 }
  
 .rege2{
-	top: 140px;
+	top: 8.75em;
 }
 
 .rege3{
-	top: 220px;
+	top: 13.75em;
 }
 
 .submit_1,.input_3,.range3{
-position:relative;
-top:-78px;
+	position:relative;
 }
 
 
 
 .input_1{
-	width:298px;
-	height:46px;
-	line-height:46px;
-	border-radius: 5px;
-	font-family:Microsoft YaHei;
-	font-size:24px;
+	height:2em;
+	border-radius: 0.25em;
+	font-size:1.5em;
 	color:#747474;
-	border:1px solid #bdbcbc;
-	text-indent:20px;
-	-moz-box-shadow: inset 0 0 4px #bdbcbc;
-	-webkit-box-shadow: inset 0 0 4px #bdbcbc;
-	-ms-box-shadow: inset 0 0 4px #bdbcbc;
-	box-shadow: inset 0 0 4px #bdbcbc;
+	border:0.06em  solid #bdbcbc;
+	text-indent:1.25em;
+	-moz-box-shadow: inset 0 0 0.25em #bdbcbc;
+	-webkit-box-shadow: inset 0 0 0.25em #bdbcbc;
+	-ms-box-shadow: inset 0 0 0.25em #bdbcbc;
+	box-shadow: inset 0 0 0.25em #bdbcbc;
 }
 
 .input_1:hover,.input_3:hover,.upload:hover
 {
-	-webkit-box-shadow:  0 0 5px #5dc3e2;
-	-moz-box-shadow:  0 0 5px #5dc3e2;
-	-ms-box-shadow:  0 0 5px #5dc3e2;
-	box-shadow:  0 0 5px #5dc3e2;
+	-webkit-box-shadow:  0 0 0.25em #5dc3e2;
+	-moz-box-shadow:  0 0 0.25em #5dc3e2;
+	-ms-box-shadow:  0 0 0.25em #5dc3e2;
+	box-shadow:  0 0 0.25em #5dc3e2;
 }
 
 .input_2{
-	width:300px;
-	height:50px;
-	line-height:50px;
-	font:24px 'Microsoft YaHei';
-	text-indent:20px;
+	width:18.75em;
+	font-size:1.5em;
+	text-indent:1.25em;
 	color:#747474;
 	}
 
 .radio_1{
-	width:18px;
-	height:18px;
+	width:1em;
+	height:1em;
 }
 
-.range1,.range2{
-	position:relative;
-	top:-30px;
-	}
-	
 	
 .range2{
-	padding:0 18px;
+	padding:0 1em;
 	}
 	
 .range3{
-	padding:15px 0 0 0;
+	padding:1em 0 0 0;
 
 	}
 	
 .range4{
-	padding:15px 18px 0 18px;
+	padding:1em 1em 0 1em;
 	position:relative;
-	top:-80px;
 	}
 	
 .input_3{
-	width:794px;
-	min-height:394px;
-	border-radius: 5px;
-	font-family:Microsoft YaHei;
-	font-size:18px;
+	width:45em;
+	height: 18em;
+	border-radius: 0.25em;
+	font-size:1.1em;
 	color:#747474;
-	border:1px solid #bdbcbc;
+	border:0.06em  solid #bdbcbc;
 	position:relative;
-	text-indent:20px;
-	margin-top:30px;
-	margin-left:2px;
-	-moz-box-shadow: inset 0 0 4px #bdbcbc;
-	-webkit-box-shadow: inset 0 0 4px #bdbcbc;
-	-ms-box-shadow: inset 0 0 4px #bdbcbc;
-	box-shadow: inset 0 0 4px #bdbcbc;
+	text-indent:1.25em;
+	margin: 0 auto;
+    	display: block;
+	-moz-box-shadow: inset 0 0 0.25em #bdbcbc;
+	-webkit-box-shadow: inset 0 0 0.25em #bdbcbc;
+	-ms-box-shadow: inset 0 0 0.25em #bdbcbc;
+	box-shadow: inset 0 0 0.25em #bdbcbc;
 }
 
 .submit_1{
-	width:200px;
-	height:80px;
-	font-family:Microsoft YaHei;
-	font-size:32px;
+	display: block;
+    	width: 10em;
+    	height: 3em;
+	font-size:1.5em;
 	color:#747474;
 	background-color:#fbfbfb;
-	border:1px solid #bdbcbc;
-	border-radius: 5px;
-	margin-top:20px;
-	margin-left:300px;
-	-moz-box-shadow: inset 0 0 5px #e0dddd;
-	-webkit-box-shadow: inset 0 0 5px #e0dddd;
-	-ms-box-shadow: inset 0 0 5px #e0dddd;
-	box-shadow: inset 0 0 5px #e0dddd;
+	border:0.06em solid #bdbcbc;
+	border-radius: 0.25em;
+	margin: 1em auto;
+	-moz-box-shadow: inset 0 0 0.25em #e0dddd;
+	-webkit-box-shadow: inset 0 0 0.25em #e0dddd;
+	-ms-box-shadow: inset 0 0 0.25em #e0dddd;
+	box-shadow: inset 0 0 0.25em #e0dddd;
 	}
 	
 .submit_1:hover{
 	background-color:#eeeded;
 	
 	}
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 6px;
+    }
+    .container{
+	width: 96%;
+    }
+    .table{
+    	width: 90%;
+    }
+    td{
+    	width: 60%;
+    	float: left;
+    	margin-bottom: 1em;
+    }
+    .pic{
+    	position: absolute;
+    	width: 30%;
+    	left: 70%;
+    }
+    .input_3{
+    	width: 90%;
+    }
+    .range3{
+    	font-size: 4px;
+    	padding:0;
+    	width: 72%;
+    }
+    .range2 {
+	padding: 0;
+    }
+    .range4 {
+	padding: 0;
+
+	}
+    input{
+    	width: 13.5em
+    }
+    .input_2 label{
+    	margin-right: 1.5em;
+    }
+    .input_2{
+    	text-indent: 0;
+    }
+
+}

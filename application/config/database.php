@@ -1,8 +1,7 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /*
-|--------------------------------------------------------------------
-
-TABASE CONNECTIVITY SETTINGS
+| -------------------------------------------------------------------
+| DATABASE CONNECTIVITY SETTINGS
 | -------------------------------------------------------------------
 | This file will contain the settings needed to access your database.
 |
@@ -45,10 +44,11 @@ TABASE CONNECTIVITY SETTINGS
 | The $active_record variables lets you determine whether or not to load
 | the active record class
 */
+
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = '202.114.177.31';
+$db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
 $db['default']['password'] = 'root';
 $db['default']['database'] = 'reg';
@@ -63,5 +63,7 @@ $db['default']['dbcollat'] = 'utf8_general_ci';
 $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
+
+
 /* End of file database.php */
 /* Location: ./application/config/database.php */
