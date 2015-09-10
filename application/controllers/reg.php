@@ -9,7 +9,13 @@ class Reg extends CI_Controller {
 
 	public function post()
 	{
-		$username = $this->input->post('username');
+		if($this->input->post('username')!=null){
+			$username = $this->input->post('username');
+		}else{
+			$url = 'reg';
+			header('Location: '.$url);
+			die(11);
+		}
 		$sex = $this->input->post('sex');
 		$department = $this->input->post('department');
 		$grade = $this->input->post('grade');
@@ -39,6 +45,6 @@ class Reg extends CI_Controller {
 				"time" => time(),
 			);
 		$query = $this->reg_m->insert($regArr);
-		header('Location: /reg');
+		$this->load->view("post_ok");
 	}
 }

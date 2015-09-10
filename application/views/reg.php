@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <base href="<?php  echo base_url();?>"/>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
 <link href="static/css/reg.css" type="text/css" rel="stylesheet" />
 <script type="text/javascript">
 window.onload=function(){
@@ -80,12 +80,12 @@ $(function(){
 			</div>
 		  </td><!--picture voer-->
 		</tr>
-		
+
 		<tr >
 		 <td id="namere"  class="rege1"> 请输入二到四个字的姓名</td>
 		</tr>
-		
-		
+
+
 	    <tr>
 		  <td class="range1">
 			<input id="department_1" class="input_1" type="text" name="department"  placeholder="学院" />
@@ -94,13 +94,13 @@ $(function(){
 			<input class="input_1" type="text" name="grade" placeholder="年级专业" />
 		  </td><!--major voer-->
 		</tr>
-		
+
 		<tr>
 		 <td id="departmentre"  class="rege2"> 请输入二到七个字的年级专业
 		 </td>
 		</tr>
-		
-		
+
+
 		<tr >
 		  <td class="range3">
 		      <label><input class="radio_1" type="radio" name="Intention" value= "技术部" checked="checked" />    技术部</label>
@@ -111,11 +111,11 @@ $(function(){
 			<input id="phone_1" class="input_1" type="text" name="phone" placeholder="手机号" />
 		  </td><!--contact voer-->
 		</tr>
-		
+
 		<tr>
 		 <td id="phonere" class="rege3"> 请输入十一位手机号</td>
 		</tr>
-		
+
 	  </table><!--table voer-->
 	  <div >
 	    <textarea class="input_3" id="summary" placeholder="自我介绍" name="summary" ></textarea>
@@ -124,7 +124,7 @@ $(function(){
 		<button class="submit_1" type="submit"  name="submit"/>提     交</button>
 	  </div><!--submit voer-->
     </form>
-  </div> 
+  </div>
 </div>
 
 </body>
