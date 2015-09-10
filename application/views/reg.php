@@ -26,9 +26,10 @@
 		  </td> <!--sex voer-->
 		   <td  rowspan="3" class="pic">
 		  			<div  class="upload">
-		  				<input type="text" class="upload_1" name="txt" value="上传照片"/>
+              <div id="box">
+		  				<input type="text" class="upload_1" id="img" name="txt" value="上传照片"/>
+              </div>
 		  				<input type="file" id="img_upload" name="userfile"/>
-		  				<div id="box" style="position: absolute; margin: -227px 0 0 0;"></div>
 		  			</div>
 		  </td> <!--picture voer-->
 		</tr>
@@ -126,8 +127,9 @@ $(function(){
       var r = new FileReader();
       r.readAsDataURL(file); //Base64
         $(r).load(function(){
-          $('#box').html('<img style="width:170px; height:224px;" src="'+ this.result +'" alt="" />');
+          $('#box').html('<img class="ajax_img" src="'+ this.result +'" alt="" />');
         });
     });
 });
 </script>
+<html>
