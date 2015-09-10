@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <base href="<?php  echo base_url();?>"/>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
 <link href="static/css/reg.css" type="text/css" rel="stylesheet" />
 <script type="text/javascript">
 window.onload=function(){
